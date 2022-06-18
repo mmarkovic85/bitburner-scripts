@@ -1,5 +1,4 @@
-/** @param {NS} ns */
-export async function main(ns) {
+export const create_scan_api = async (ns) => {
   // api methods
   const list_hostnames = (hostname = ns.getHostname(), hostnames = []) => {
     if (hostnames.includes(hostname)) {
@@ -14,4 +13,4 @@ export async function main(ns) {
 
   // api iface
   return { list_hostnames };
-}
+};

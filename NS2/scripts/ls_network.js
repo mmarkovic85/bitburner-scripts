@@ -1,4 +1,4 @@
-import { main as create_scan_api } from '/lib/scan_api.js';
+import { create_scan_api } from '/lib/scan_api.js';
 
 /** @param {NS} ns */
 export async function main(ns) {
