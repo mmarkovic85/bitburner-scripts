@@ -1,3 +1,7 @@
+//
+// ACCESS API
+//
+
 export const create_access_api = async (ns) => {
   // api methods
   const gain_root = (target_hostname, target_req_open_port, attacker_hostname = ns.getHostname()) => {

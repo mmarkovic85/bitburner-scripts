@@ -1,3 +1,7 @@
+//
+// GAIN ROOT ACCESS ON NETWORK
+//
+
 import { create_scan_api } from '/lib/scan_api.js';
 import { create_access_api } from '/lib/access_api.js';
 

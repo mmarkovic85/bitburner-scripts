@@ -1,3 +1,7 @@
+//
+// DEPLOY SELF CONTAINED HACK TO NETWORK
+//
+
 import { create_scan_api } from '/lib/scan_api.js';
 
 /** @param {NS} ns */

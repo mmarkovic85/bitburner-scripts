@@ -1,3 +1,7 @@
+//
+// SCAN API
+//
+
 export const create_scan_api = async (ns) => {
   // api methods
   const list_hostnames = (hostname = ns.getHostname(), hostnames = []) => {

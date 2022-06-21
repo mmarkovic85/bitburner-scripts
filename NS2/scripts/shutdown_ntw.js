@@ -1,3 +1,7 @@
+//
+// SHUTDOWN NETWORK OPS
+//
+
 import { create_scan_api } from '/lib/scan_api.js';
 
 /** @param {NS} ns */
