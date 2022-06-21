@@ -5,8 +5,11 @@ export async function main(ns) {
   // config
   const scan_api = await create_scan_api(ns);
 
+  // helpers
+  const hostname_filter_fn = (hostname) => hostname !== 'home';
+
   // main
-  const files_repo = scan_api.list_hostnames().filter((h) => h !== 'home').reduce((acc, h) => {
+  const files_repo = scan_api.list_hostnames().filter(hostname_filter_fn).reduce((acc, h) => {
     const host_files = ns.ls(h);
 
     if (host_files.length > 0) acc[h] = host_files;
